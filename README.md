@@ -6,6 +6,9 @@ This project analyses Netflix’s global catalogue using a cleaned and structure
 # Executive Summary
 The code & dashboards provides a comprehensive overview of global movie and TV‑show patterns, highlighting how content distribution varies across ratings, countries, genres, and time. The analysis shows that TV‑MA, TV‑14, and TV‑PG dominate the catalogue, reflecting a strong emphasis on mature and teen‑oriented programming. When examining release trends, the data reveals a sharp increase in content production from the early 2000s onward, with a significant surge between 2015 and 2019, aligning with the rapid expansion of streaming platforms.
 
+# Why This Project Matters
+This project demonstrates how data can reveal the strategic decisions behind one of the world’s largest streaming platforms. By analysing Netflix’s catalogue across ratings, genres, countries, and release years, the work uncovers how the platform prioritises content, responds to global demand, and adapts to industry trends. The dashboards make these patterns visible and easy to interpret, turning a large, unstructured dataset into insights that support content planning, market analysis, and audience understanding. For anyone working in media, analytics, or digital strategy, this project shows how data‑driven storytelling can illuminate the forces shaping modern entertainment.
+
 ## Source
 I recieved this data set from: https://www.kaggle.com/code/zhukovoleksiy/netflix-dataset-cleaning-dashboard
 I used this data to create my own version of the code and tableau Visuals
@@ -112,6 +115,9 @@ The genre analysis shows that dramas, documentaries, comedies, and international
 # Overall Insight
 Together, these visuals provide a comprehensive view of how content varies across ratings, genres, countries, and time. The dashboard highlights clear patterns in global production, audience targeting, and catalogue strategy, offering valuable insights for content planning, localisation, and market analysis.
 
+# Project Impact
+This project demonstrates how data analysis can uncover the strategic decisions behind one of the world’s largest streaming platforms. By transforming a raw dataset into clear, structured insights, the work highlights how Netflix allocates its content investment, which regions dominate production, and how audience targeting has shifted over time. The dashboards make these patterns accessible to both technical and non‑technical audiences, supporting decisions in content planning, localisation, and market strategy. Beyond the streaming industry, the project showcases your ability to manage an end‑to‑end analytical workflow—cleaning data, engineering features, building visualisations, and communicating insights in a way that drives understanding and action.
+
 # Tools and Technologies Used
 ### Python (Google Colab)
 * Used for full data‑cleaning workflow
@@ -143,7 +149,12 @@ Together, these visuals provide a comprehensive view of how content varies acros
 * Hosts the project write‑up and dashboards
 * Presents the analysis in a polished, accessible format for viewers
 
+# Limitations and Future Improvements
+Limitations  
+The dataset reflects a snapshot of Netflix’s catalogue at a single point in time, meaning it does not capture how titles are added or removed throughout the year. Some fields—such as cast, director, and detailed genre tags—were removed to streamline the analysis, which limits the depth of insights into creative contributors or multi‑genre relationships. Country information is often incomplete or inconsistently formatted, and extracting only the first listed country simplifies the data but may overlook co‑productions. Ratings classifications also vary across regions, which can introduce inconsistencies when grouping content into age categories.
 
+Future Improvements  
+Expanding the dataset to include multiple time periods would allow for a richer analysis of catalogue turnover and long‑term trends. Incorporating additional metadata—such as IMDb scores, runtime, or viewer engagement metrics—could deepen insights into content performance. A more advanced geographic model could account for co‑productions or regional licensing differences. Machine‑learning techniques could be introduced to cluster genres, predict content ratings, or identify emerging trends. Finally, integrating Python‑based statistical analysis alongside Tableau visuals would strengthen the analytical depth and open the door to more sophisticated storytelling.
 
 Dashboard Link 1: https://public.tableau.com/app/profile/owen.masterson/viz/Netflix_17708310832790/Dashboard1?publish=yes
 
