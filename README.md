@@ -1,4 +1,8 @@
 # Python-Tableau_Netflix
+
+# Project Overview
+This project analyses Netflix’s global catalogue using a cleaned and structured dataset of movies and TV shows. After transforming the raw data in Python, the analysis explores how content varies across ratings, genres, countries, and time. The findings highlight Netflix’s strong emphasis on mature and teen‑oriented programming, a rapid rise in content production from the early 2000s onward, and clear regional disparities in global content distribution. Tableau dashboards bring these patterns to life, revealing how Netflix’s library reflects broader trends in streaming growth, international production, and audience targeting.
+
 # Executive Summary
 The code & dashboards provides a comprehensive overview of global movie and TV‑show patterns, highlighting how content distribution varies across ratings, countries, genres, and time. The analysis shows that TV‑MA, TV‑14, and TV‑PG dominate the catalogue, reflecting a strong emphasis on mature and teen‑oriented programming. When examining release trends, the data reveals a sharp increase in content production from the early 2000s onward, with a significant surge between 2015 and 2019, aligning with the rapid expansion of streaming platforms.
 
@@ -71,7 +75,10 @@ The final cleaned DataFrame was exported as cleaned_data.csv, which was then imp
 
 <img width="579" height="449" alt="Screenshot 2026-02-11 192350" src="https://github.com/user-attachments/assets/b62aaa32-e6f7-4a6a-afba-d0c4074028d7" />
 
-<img width="765" height="217" alt="Screenshot 2026-02-11 192551" src="https://github.com/user-attachments/assets/613518f1-b65d-496b-94f4-d775ecc8f1a8" />
+<img width="765" height="217" alt="Screenshot 2026-02-11 192551" src="https://github.com/user-
+attachments/assets/613518f1-b65d-496b-94f4-d775ecc8f1a8" />
+
+
 
 python Code: https://colab.research.google.com/drive/1LiCB6qCzTyRe3KR1k3usNC0Rdlupo1Q8#scrollTo=SrPKtj-YOG5z
 
@@ -104,6 +111,38 @@ The genre analysis shows that dramas, documentaries, comedies, and international
 
 # Overall Insight
 Together, these visuals provide a comprehensive view of how content varies across ratings, genres, countries, and time. The dashboard highlights clear patterns in global production, audience targeting, and catalogue strategy, offering valuable insights for content planning, localisation, and market analysis.
+
+# Tools and Technologies Used
+### Python (Google Colab)
+* Used for full data‑cleaning workflow
+* Libraries: pandas, numpy, datetime
+* Tasks included:
+- Inspecting and understanding the raw dataset
+- Removing unnecessary columns
+- Handling missing values
+- Converting and standardising date fields
+- Extracting primary country of origin
+- Creating custom age‑group classifications
+- Exporting a clean CSV for visualisation
+
+### Tableau
+* Used to build interactive dashboards
+* Visualised:
+- Content ratings distribution
+- Release‑year trends
+- Global title distribution
+- Ratings by country
+- Genre patterns
+- Enabled deeper insight into how Netflix’s catalogue is structured and how it has evolved over time
+
+### GitHub
+* Stores the full project code, cleaned dataset, and documentation
+* Provides version control and a public portfolio record of your workflow
+
+### Google Sites
+* Hosts the project write‑up and dashboards
+* Presents the analysis in a polished, accessible format for viewers
+
 
 
 Dashboard Link 1: https://public.tableau.com/app/profile/owen.masterson/viz/Netflix_17708310832790/Dashboard1?publish=yes
