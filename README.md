@@ -11,6 +11,8 @@ This project demonstrates how data can reveal the strategic decisions behind one
 I recieved this data set from: https://www.kaggle.com/code/zhukovoleksiy/netflix-dataset-cleaning-dashboard
 I used this data to create my own version of the code and tableau Visuals
 
+Note: The raw dataset is not included in this repo. See `data/README.md` for instructions on how to obtain it.
+
 # Python
  This project begins with a full data‑cleaning workflow completed in Google Colab using Python and pandas. The goal was to transform the raw Netflix dataset into a structured, analysis‑ready format suitable for Tableau visualisation.
 
