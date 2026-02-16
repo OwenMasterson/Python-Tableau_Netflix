@@ -1,0 +1,63 @@
+## Code
+This is the code in made in its fullest:
+
+import kagglehub
+shivamb_netflix_shows_path = kagglehub.dataset_download('shivamb/netflix-shows')
+
+print('Data source import complete.')
+
+import numpy as np
+import pandas as pd
+
+import plotly.express as px
+
+data = pd.read_csv('/kaggle/input/netflix-shows/netflix_titles.csv')
+data.head()
+
+data.info()
+
+# Drop Columns
+data.drop(columns=['show_id', 'cast', 'director', 'description'], inplace=True)
+
+# Replacments
+data['country'] = data['country'].fillna(data['country'].mode()[0])
+
+# Drop the rest
+data.dropna(inplace=True)
+
+# Change Data Type to DateTime
+data["date_added"] = pd.to_datetime(data['date_added'], format='mixed')
+
+# Let's leave only first country from each list
+data['principal_country'] = data['country'].apply(lambda x: x.split(",")[0])
+
+ratings_ages = {
+    'TV-PG': 'Older Kids',
+    'TV-MA': 'Adults',
+    'TV-Y7-FV': 'Older Kids',
+    'TV-Y7': 'Older Kids',
+    'TV-14': 'Teens',
+    'R': 'Adults',
+    'TV-Y': 'Kids',
+    'NR': 'Adults',
+    'PG-13': 'Teens',
+    'TV-G': 'Kids',
+    'PG': 'Older Kids',
+    'G': 'Kids',
+    'UR': 'Adults',
+    'NC-17': 'Adults'
+}
+
+# Replace Rating values with age targets, they are based on
+data['ages'] = data['rating'].replace(ratings_ages)
+data['ages'].unique()
+
+data.head()
+
+import os
+
+output_dir = '/kaggle/working'
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+data.to_csv(os.path.join(output_dir, 'netflix_title_cleaned.csv'))
